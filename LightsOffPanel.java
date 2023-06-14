@@ -125,9 +125,9 @@ public class LightsOffPanel extends JPanel {
 			}
 		}
 		if (success) {
-			String successMessage = "Would you like to play again? (Choose OK for yes, Cancel for no)";
-			int result = JOptionPane.showConfirmDialog(null,  successMessage, "Congratulations!", JOptionPane.OK_CANCEL_OPTION, JOptionPane.PLAIN_MESSAGE);
-			if (result == JOptionPane.OK_OPTION) {
+			String successMessage = "Would you like to play again?";
+			int result = JOptionPane.showConfirmDialog(null,  successMessage, "Congratulations!", JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE);
+			if (result == JOptionPane.YES_OPTION) {
 				state = null;
 				newGame();
 			} else {
@@ -163,7 +163,7 @@ public class LightsOffPanel extends JPanel {
 	}
 	
 	public static void main(String[] args) {		
-		JFrame frame = new JFrame("Lights Off! Version 1.0 by Christopher Reis");
+		JFrame frame = new JFrame("Lights Off! Version 1.2 by Christopher Reis");
         frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add(new LightsOffPanel());
         frame.pack();

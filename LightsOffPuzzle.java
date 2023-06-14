@@ -94,6 +94,9 @@ public class LightsOffPuzzle {
 		return true;
 	}
 	
+	// Note that if you lose the "basepuzzles.txt" file, you can run this class as a main class
+	// to generate it. Be aware this takes some time to run.
+	
 	public static void main(String[] args) throws IOException {
 		generatePossibleCandidates();
 	}
