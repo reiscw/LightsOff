@@ -163,11 +163,10 @@ public class LightsOffPanel extends JPanel {
 	}
 	
 	public static void main(String[] args) {		
-		JFrame frame = new JFrame("Lights Off! Version 1.2 by Christopher Reis");
+		JFrame frame = new JFrame("Lights Off! Version 1.3 by Christopher Reis");
         frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add(new LightsOffPanel());
         frame.pack();
         frame.setVisible(true);
 	}
 }
-
